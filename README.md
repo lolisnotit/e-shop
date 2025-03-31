@@ -1,3 +1,7 @@
+current domain:
+https://e-shop-master-cnjz2w.laravel.cloud/
+
+
 e-Shop project
 
 Login, Register ,Role(Vendor,User,Admin), DB migration added,

@@ -24,13 +24,12 @@ export default function Welcome({
             <div className="hero bg-gray-200 h-[300px]">
                 <div className="hero-content text-center">
                     <div className="max-w-md">
-                        <h1 className="text-5xl font-bold">Hello there</h1>
+                        <h1 className="text-5xl font-bold">e-shop ホームページ</h1>
                         <p className="py-6">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                            オンラインショッピングサイト
                         </p>
-                        <button className="btn btn-primary">Get Started</button>
-                    </div>
+                        <Link href={route('register')} className="btn btn-primary">利用開始</Link>
+                        </div>
                 </div>
             </div>
         </AuthenticatedLayout>

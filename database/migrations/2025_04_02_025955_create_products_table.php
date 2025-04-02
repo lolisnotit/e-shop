@@ -20,8 +20,8 @@ return new class extends Migration
             $table->foreignId('department_id')->index()->constrained('departments');
             $table->foreignId('category_id')->index()->constrained('categories');
             $table->decimal('price',20,4);
-            $table->string('status')->default('');
-            $table->integer('quantity')->default('');
+            $table->string('status')->nullable();;
+            $table->integer('quantity')->default(0);
             $table->foreignIdFor(User::class,'created_by');
             $table->foreignIdFor(User::class,'updated_by');
             $table->timestamp('deleted_at')->nullable();

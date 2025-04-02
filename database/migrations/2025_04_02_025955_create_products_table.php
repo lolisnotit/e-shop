@@ -11,13 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('departments',function(Blueprint $table){
+        Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('slug')->unique();
-            $table->string('meta_title')->nullable();
-            $table->string('meta_description')->nullable();
-            $table->string('active')->default(true);
             $table->timestamps();
         });
     }
@@ -26,5 +21,7 @@ return new class extends Migration
      * Reverse the migrations.
      */
     public function down(): void
-    {Schema::dropIfExists('departments');}
+    {
+        Schema::dropIfExists('products');
+    }
 };

@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('departments',function(Blueprint $table){
+        Schema::create('categories',function(Blueprint $table){
             $table->id();
             $table->string('name');
-            $table->string('slug')->unique();
-            $table->string('meta_title')->nullable();
-            $table->string('meta_description')->nullable();
-            $table->string('active')->default(true);
+            $table->foreignId('department_id')->index()->constrained();
+            $table->foreignId('parent_id')->nullable()->index()->constrained('categories');
+            $table->boolean('active')->nullable();
             $table->timestamps();
         });
     }
@@ -26,5 +25,7 @@ return new class extends Migration
      * Reverse the migrations.
      */
     public function down(): void
-    {Schema::dropIfExists('departments');}
+    {
+        Schema::dropIfExists('categories');
+    }
 };

@@ -1,10 +1,10 @@
-current domain:
+![image](https://github.com/user-attachments/assets/198a3698-be1d-4b64-8f0b-2d1569361ec7)current domain:
 https://e-shop-master-cnjz2w.laravel.cloud/
 
 
 e-Shop project
 
-Login, Register ,Role(Vendor,User,Admin), DB migration added,
+Login, Register ,Role(Vendor,User,Admin), DB migration added,Product CRUD
 
 to be added:
 Product CRUD,
@@ -26,3 +26,11 @@ after login
 
 change login info 
 ![image](https://github.com/user-attachments/assets/ef5f837d-d34a-4e84-ac25-2200b4857625)
+
+product crud
+![image](https://github.com/user-attachments/assets/368ad167-bb97-445a-9468-04d1ea8e21d3)
+
+product list 
+![image](https://github.com/user-attachments/assets/b26fa0f4-decd-44c1-8f28-86e1f336976c)
+
+
